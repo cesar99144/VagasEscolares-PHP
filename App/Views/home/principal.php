@@ -22,7 +22,7 @@
                  </nav>
             </div>
             <div class="button-header">
-                <a id="botaoLogin" target="_blank" href="<?php echo URL_BASE; ?>educacional/usuario">Login e cadastro</a>
+                <a id="botaoLogin" href="<?php echo URL_BASE; ?>educacional/usuario">Login e cadastro</a>
             </div>
         </header>
         <section id="buscar">
