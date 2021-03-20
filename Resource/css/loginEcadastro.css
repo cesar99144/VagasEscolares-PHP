@@ -105,11 +105,17 @@ input{
 }
 
 .lateral-direita input {
-    width: 35%;
+    width: 65%;
     color: #000000;
     background-color: #DCDCDC;
     padding: 1.5%;
     margin-top: 1%;
+
+}
+
+input#cnpj{
+
+    margin-left: 120px;
 }
 
 .lateral-direita button {
