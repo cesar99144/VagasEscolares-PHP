@@ -49,5 +49,13 @@ class Admin extends Controller{
         Auth::logout();
     }
 
+    public function solicitacoes(){
+
+    	$matriculas = $this->model('MatriculaDao');
+    	$solicitacoes = $matriculas->buscarSolicitacoesPorEscola($_SESSION['idEscola']);
+
+    	$this->viewDash('admEscola/solicitacoes', $dados = ['solicitacoesVagas' => $solicitacoes]);
+    }
+
 
 }

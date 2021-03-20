@@ -7,7 +7,10 @@ class Educacional extends Controller{
 
 	public function home(){
 
-		$this->view('home/principal');
+		$escolasDao = $this->model('EscolaDao');
+		$listaEscolas = $escolasDao->listarTodasAsEscolas();
+
+		$this->view('home/principal', $dados = ['escolasLista' => $listaEscolas]);
 	}
 
 	public function usuario(){
@@ -83,5 +86,37 @@ class Educacional extends Controller{
 		endif;
 
 		$this->view('home/loginECadastro', $dados = ['mensagem' => $mensagem]);
+	}
+
+	public function buscarVagasEscolas(){
+
+			//Listar vagas da escola escolhida
+			$vagasDao = $this->model('VagasDao');
+        	$vagasEscola = $vagasDao->listarTodasVagas();
+
+        	$this->view('home/resultadoVagas', $data = ['vagasEscolas' => $vagasEscola]);
+	}
+
+	public function solicitarMatricula(){
+
+		if(isset($_POST['nome']) && isset($_POST['cpf']) && isset($_POST['dataUser']) && isset($_POST['modalidade'])):
+
+			$data = implode('/', array_reverse(explode('-', $_POST['dataUser'])));
+
+			$matricula = $this->model('Matricula');
+			$matricula->setNome($_POST['nome']);
+			$matricula->setCpf($_POST['cpf']);
+			$matricula->setDataNascimento($data);
+			$matricula->setSerieEscolar($_POST['serie']);
+			$matricula->setNivelEscolar($_POST['modalidade']);
+			$matricula->setEscolaInteresse($_POST['idEscola']);
+			$matricula->setStatus("Espera");
+
+			$matriculaDao = $this->model('MatriculaDao');
+			$solicitarMatricula = $matriculaDao->cadastrar($matricula);
+		else:
+
+
+		endif;
 	}
 }

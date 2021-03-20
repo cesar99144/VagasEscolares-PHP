@@ -64,4 +64,23 @@ class EscolaDao extends Conexao{
 
 		endif;
 	}
+
+	public function listarTodasAsEscolas(){
+
+		$query = "SELECT * FROM escolas";
+		$stmt = Conexao::getConn()->prepare($query);
+		$stmt->execute();
+
+		if($stmt->rowCount() > 0):
+
+			$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+			return $resultado;
+
+		else:
+
+			return [];
+
+		endif;
+	}
 }
