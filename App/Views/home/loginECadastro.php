@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!--para usar os icones das redes sociais-->
     <link rel="stylesheet" href="<?php echo URL_BASE; ?>Resource/css/loginEcadastro.css">
     <title>Educacional - Cadastro</title>
+
+    <!-- JQUERY CNPJ-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <aside class="lateral-esquerda">
@@ -28,12 +33,13 @@
         <img src="<?php echo URL_BASE; ?>Resource/imagens/logo-TelaLogin.png" class="imgEstudante" alt="logo">
 
         <h1>Cadastre-se Já</h1>
-
-        <input type="text" placeholder="Digite o nome da escola" class="txtNome"> <br>
-        <input type="text" placeholder="Digite o e-mail " class="txtEmail"> <br>
-        <input type="password" placeholder="Escolha a senha" class="txtSenha"> <br>
-        <input type="password" placeholder="Digite novamente a senha" class="txtSenha2"> <br>
-        <button class="btnCadastrar">Cadastrar</button>
+        <form action="<?php echo URL_BASE; ?>educacional/cadastrarEscola" method="POST">
+            <input id="cnpj" name="cnpj" type="text" placeholder="Digite o cnpj da escola" class="txtNome" required> <button id="pesquisar" class="btnCadastrar">Buscar cnpj</button> <br>
+            <input id="razaoSocial" name="razaoSocial" type="text" placeholder="Digite a razão social " class="txtEmail" required> <br>
+            <input id="cidade" name="cidade" type="text" placeholder="Digite a cidade" class="txtSenha" required> <br>
+            <input id="uf" name="uf" type="text" placeholder="Digite o estado" class="txtSenha" required> <br>
+            <input type="submit" class="btnCadastrar" value="Cadastrar">
+        </form>
 
         <div class="redes-sociais">
             <p>Conecte-se também usando suas redes sociais</p>
@@ -42,5 +48,7 @@
             <a href="https://www.instagram.com/" target="_blank"> <i class="instagram fa fa-instagram"></i> </a>
         </div>
     </aside>
+
+     <script src="<?php echo URL_BASE; ?>Resource/javascript/buscaCnpj.js" type="text/javascript"></script>
 </body>
 </html>
