@@ -1,3 +1,5 @@
+<h1>Criar usuário para acessas dash da sua escola</h1>
+
 <form action="<?php echo URL_BASE; ?>educacional/cadastrarUsuario" method="POST">
 	<input type="text" name="nome" placeholder="Nome">
 	<input type="text" name="sobrenome" placeholder="Sobrenome">
