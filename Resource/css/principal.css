@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+}
+
+header{
+
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+img#logo{
+
+    max-width: 100px;
+    
+}
+
+nav#menu ul{
+
+    margin-top: 1rem;
+}
+
+nav#menu li{
+
+    list-style: none;
+    display: inline;
+    margin-left: 2rem;
+    
+}
+
+.textLinks{
+
+    text-decoration: none;
+    font-size: 14pt;
+    color: black;
+    padding: 1rem;
+}
+
+.textLinks:hover{
+
+    background: black;
+    color: white;
+    
+}
+
+.button-header{
+
+    margin-top: 1rem;
+}
+
+a#botaoLogin{
+
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+    background: #d82460;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+/* Section buscar */
+
+section#buscar{
+
+    background-image: url('../imagens/capa.jpg');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 658px;
+}
+
+
+.area-busca{
+
+    width: 900px;
+    height: 420px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.titulo-busca{
+
+    width: 400px;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.titulo-busca h1{
+
+    font-size: 25pt;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.dadosConsulta{
+
+    display: flex;
+    width: 700px;
+    height: 120px;
+    margin: auto;
+    padding: 10px;
+}
+
+.escola{
+
+    margin-left: 10px;
+}
+
+.titulo-escola{
+
+    margin-top: 30px;
+}
+
+.titulo-escola label{
+
+    font-size: 23pt;
+    font-weight: bold;
+    text-shadow: black 2px 3px 2px;
+    color: white;
+    
+
+}
+
+.conteudo-select{
+
+    margin-top: 5px;
+    width: 350px;
+    font-size: 15pt;
+    padding: 10px;
+    background: white;
+    border: none;
+    
+}
+
+div#segundaDados{
+
+    margin-top: -20px;
+}
+
+.botao-busca{
+
+    width: 100px;
+    margin: auto;
+}
+
+.botao-busca input{
+
+    width: 200px;
+    font-size: 15pt;
+    background: teal;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-left: 12rem;
+}
+
+/* section sobre */
+
+section#sobre {
+
+    background-image: url(../imagens/shape.png); /*Chamando imagem com css mesmo*/
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+#sobre p {
+    
+    padding-left: 1%;
+    margin-top: 15%;
+    width: 50%;
+    font-size: 2.3em;
+}
+
+
+div.parceiros {
+
+    width: 50%;
+    margin-top: 10%;
+}
+
+div.parceiros h1 {
+
+    font-size: 3em;
+    color: #008080;
+    text-decoration: underline;
+    margin-top: 8%;
+}
+
+div.parceiros h2{
+
+    font-size: 1.7em;
+    padding-top: 2%;
+}
+
+/* section apresentação */
+
+section#apresentacao{
+
+    background: #f3f7fd;
+    height: 580px;
+    display: flex;
+
+}
+
+.conteudoTexto{
+
+    margin-top: 5rem;
+    margin-left: 7rem;
+}
+
+.textoInformativo{
+
+   text-align: center;
+}
+
+.textoInformativo h2{
+
+    font-size: 30pt;
+}
+
+.textoInformativo span{
+
+    margin-left: 3rem;
+}
+
+p#conteudoDesc{
+
+    margin-left: -3rem;
+    font-size: 16pt;
+}
+
+.botao{
+
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+.botao a{
+
+    text-decoration: none;
+    font-size: 20pt;
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+/* cadastrar */
+
+/* footer rodape */
+
+footer#rodape {
+    
+    color: #fff;
+    background-color: #363636;
+    text-align: center;
+    padding: 20px;
+}
