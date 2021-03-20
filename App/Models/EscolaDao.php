@@ -35,7 +35,7 @@ class EscolaDao extends Conexao{
 
 			$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
-			return $resultado['id'];
+			return $resultado;
 
 		else:
 
@@ -43,5 +43,25 @@ class EscolaDao extends Conexao{
 
 		endif;
 
+	}
+
+	public function listarVagasPorEscola($idEscola){
+
+		$query = "SELECT * FROM vagas where idEscola = ?";
+		$stmt = Conexao::getConn()->prepare($query);
+		$stmt->bindValue(1, $idEscola);
+		$stmt->execute();
+
+		if($stmt->rowCount() > 0):
+
+			$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+			return $resultado;
+
+		else:
+
+			return [];
+
+		endif;
 	}
 }

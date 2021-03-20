@@ -20,12 +20,23 @@
         <p>Se você já tiver uma conta cadastrada</p>
         
         <!--Essa Div abaixo foi criada somente para centralizar o botão-->
-        <form action="">
-            <input type="email" placeholder="Email"><br>
-            <input type="password" placeholder="Senha">
+        <form action="<?php echo URL_BASE; ?>educacional/login" method="POST">
+            <input type="email" placeholder="Email" name="email" required><br>
+            <input type="password" placeholder="Senha" name="senha" required>
+            <div><input type="submit" class="btnLogin" name="entrar" value="Faça Login"></div>
         </form><br>
-        <div><button class="btnLogin">Faça Login</button> </div>
-    
+        <?php 
+          //Exibe mensagens de validação para o usuário
+          if(!empty($data['mensagem'])):
+
+            foreach($data['mensagem'] as $m):
+                echo $m."<br>";
+            endforeach;
+
+          endif;
+
+        ?><br>
+
         <img src="<?php echo URL_BASE; ?>Resource/imagens/7-TelaLogin.png" alt="Imagem de Estudante">
     </aside>
 
