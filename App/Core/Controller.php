@@ -14,5 +14,9 @@ class Controller {
         require_once 'App/Views/'.$view.'.php';
     }
 
+	public function viewDash($view, $data = []) {
+        require_once 'App/Views/admEscola/dashAdm.php';
+    }
+
 
 }
