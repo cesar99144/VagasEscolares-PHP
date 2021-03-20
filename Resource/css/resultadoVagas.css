@@ -2,7 +2,7 @@ table{
 
     max-width: 70rem;
     margin: auto;
-    text-align: center;
+   
 }
 
 th{
@@ -13,5 +13,5 @@ th{
 
 select#escolas{
 
-	width: 320px;
+    width: 320px;
 }

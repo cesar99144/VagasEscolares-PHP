@@ -21,4 +21,23 @@ class VagasDao extends Conexao{
 			echo "<script>alert('Erro ao cadastrar a vaga. Verifique os dados informados e tente novamente'); location ='/admin/vagasAdmin'; </script>";
 		endif;
 	}
+
+	public function listarTodasVagas(){
+
+		$query = "SELECT e.id, e.razaoSocial, e.cnpj, e.cidade, e.estado, v.id, v.idEscola, v.quantidade, v.modalidade, v.serie FROM escolas e INNER JOIN vagas v ON v.idEscola = e.id";
+		$stmt = Conexao::getConn()->prepare($query);
+		$stmt->execute();
+
+		if($stmt->rowCount() > 0):
+
+			$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+			return $resultado;
+
+		else:
+
+			return [];
+
+		endif;
+	}
 }

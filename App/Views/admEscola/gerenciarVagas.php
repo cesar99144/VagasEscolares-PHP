@@ -27,7 +27,7 @@
 <div id="subBarra" class="container">
 
   <div class="mb-3 ml-1">
-     <label><span><?php echo 3; ?></span> registros</label>
+     <label><span><?php echo count($data['VagasEscolas']); ?></span> registros</label>
   </div>
   
 

@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="logo">
-                <img id="logo" src="imagens/logo.png" alt="">
+                <img id="logo" src="<?php echo URL_BASE; ?>Resource/imagens/logo.png" alt="">
             </div>
             <div class="links-menu">
                 <nav id="menu">
@@ -31,56 +31,13 @@
                     <h1>Buscar por vagas</h1>
                 </div>
                 <div class="dadosConsulta">
-                    <div class="escola">
-                       <div class="titulo-escola">
-                          <label for="escola">Escola</label>
-                       </div>
-                       <form action="">
-                       <select class="conteudo-select" name="escola" id="escola">
-                            <option value="">Diocesano</option>
-                            <option value="">Exato</option>
-                            <option value="">Colegio atual</option>
-                       </select>
-                    </div> 
-                    <div class="escola">
-                       <div class="titulo-escola">
-                          <label for="escola">Modalidade</label>
-                       </div>
-                       <select class="conteudo-select" name="modalidadeEscolar" id="modalidadeEscolar">
-                            <option value="">Ensino fundamental</option>
-                            <option value="">Ensino médio</option>
-                       </select>
-                    </div> 
+                    <div id="escolas-busca">  
+                       <a href="<?php echo URL_BASE; ?>educacional/buscarVagasEscolas" id="buscarButton">Buscar vagas</a>
+                    </div>
                 </div>
-                <div id="segundaDados" class="dadosConsulta">
-                    <div class="escola">
-                       <div class="titulo-escola">
-                          <label for="escola">Período</label>
-                       </div>
-                       <form action="">
-                       <select class="conteudo-select">
-                            <option value="">Manhã</option>
-                            <option value="">Tarde</option>
-                            <option value="">Integral</option>
-                       </select>
-                    </div> 
-                    <div class="escola">
-                       <div class="titulo-escola">
-                          <label for="escola">Turma</label>
-                       </div>
-                       <select class="conteudo-select" name="escola" id="escola">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                       </select>
-                    </div> 
-                </div>
+                   
                 
-                <div class="botao-busca">
-                    <input type="submit" value="Buscar">
-                    </form>
-                 </div> 
+                
             </div>
         </section>
 
