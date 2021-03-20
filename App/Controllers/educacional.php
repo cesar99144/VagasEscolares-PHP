@@ -1,6 +1,7 @@
 <?php
 
 use App\Core\Controller;
+use App\Auth;
 
 class Educacional extends Controller{
 
@@ -63,5 +64,24 @@ class Educacional extends Controller{
 
 		endif;
 		
+	}
+
+	public function login(){
+
+		$mensagem = array();
+
+		if(isset($_POST['entrar'])):
+
+			if((empty($_POST['email'])) or (empty($_POST['senha']))):
+			   $mensagem[] = "O campo email e senha são obrigatórios";
+			else:
+			   $email = $_POST['email'];
+			   $senha = $_POST['senha'];
+			   //$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+			   $mensagem[] = Auth::Login($email, $senha);
+			endif;
+		endif;
+
+		$this->view('home/loginECadastro', $dados = ['mensagem' => $mensagem]);
 	}
 }
