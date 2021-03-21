@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?php echo URL_BASE; ?>Resource/css/principal.css">
         <title>Educacional</title>
+        <!-- Icone -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- bootstrap local -->
+        <script src="<?php echo URL_BASE; ?>Resource/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
     </header>
     <body>
         <header>
@@ -28,11 +32,12 @@
         <section id="buscar">
             <div class="area-busca">
                 <div class="titulo-busca">
-                    <h1>Buscar por vagas</h1>
+                    <h1>Área do estudante</h1>
                 </div>
                 <div class="dadosConsulta">
                     <div id="escolas-busca">  
-                       <a href="<?php echo URL_BASE; ?>educacional/buscarVagasEscolas" id="buscarButton">Buscar vagas</a>
+                       <a id="buscarVagasButton" href="<?php echo URL_BASE; ?>educacional/buscarVagasEscolas" class="ButtonsHome"><i class="fas fa-search"></i><span>Buscar vagas </span></a>
+                       <a class="ButtonsHome" id="acompanharButton" onclick="abrirModal('codigo-modal')" class="btn btn-primary btn-sm"><i class="far fa-clipboard"></i><span>Acompanhar matrícula</span></a>
                     </div>
                 </div>
                    
@@ -48,11 +53,15 @@
                 <h1>Parceiros</h1> <br> <br>
 
                 <!--Alguns exemplos de colégios parceiros do site-->
-                <h2>Colégio Diocesano</h2> 
-                <h2>Aplicação Professora Ivonita Alves</h2>
-                <h2>Colégio CEMA</h2>
-                <h2>Colégio Espaço Educativo</h2>
-                <h2>Colégio Santa Sofia</h2>
+                <nav id="parceirosList">
+                   <ul>
+                <?php foreach($data['escolasLista'] as $escolas): ?>
+
+                    <li><?php echo $escolas['razaoSocial']; ?></li> 
+ 
+                <?php endforeach; ?>
+                   </ul>
+                </nav>
             </div>
         </section>
 
@@ -76,11 +85,58 @@
                 <img src="imagens/sobre.png" alt="">
             </div>
         </section>
+        <section id="contatos">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
 
         <footer id="rodape">
             <p> &copy; 2021 Copyright - Alison, César, Jefferson, Juan, Paulo </p>
         </footer>
 
-     <script src="javascript/home.js"></script>
+        <!-- Modal -->
+        <div id="codigo-modal" class="modal">
+        <div class="modal-conteudo">
+            <div class="modal-titulo">
+                    <h1>CPF do aluno</h1>
+            <div class="modal-corpo">
+                <form action="<?php echo URL_BASE; ?>educacional/acompanhar" method="POST">
+                    <input id="cpf" name="cpf" type="text" ><br>
+                    <input class="buttonModal" id="buscar-matricula" type="submit" name="buscar"  value="Buscar">
+                </form>
+            </div>
+            <div class="modal-butoes">
+                <button class="buttonModal" id="fecharModal" onclick="fecharModal('codigo-modal')">Cancelar</button>
+                 
+            </div>
+            </form>
+        </div>
+    </div>
+
+     <script src="<?php echo URL_BASE; ?>Resource/javascript/home.js"></script>
     </body>
 </html>
