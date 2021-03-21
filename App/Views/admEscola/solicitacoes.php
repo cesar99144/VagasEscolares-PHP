@@ -50,7 +50,7 @@
       <td><?php echo $vagas['dataNascimento']; ?></td>
       <td><?php echo $vagas['serieEscolar']; ?></td>
       <td><?php echo $vagas['nivelEscolar']; ?></td>
-      <td><a type="button" class="btn btn-primary btn-sm">Liberar</a></td>
+      <td><a type="button" href="<?php echo URL_BASE; ?>admin/aprovarVaga/<?php echo $vagas['id']; ?>" class="btn btn-primary btn-sm">Liberar</a></td>
       
     </tr>
     <?php endforeach; ?>

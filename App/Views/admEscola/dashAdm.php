@@ -35,7 +35,7 @@
         </nav>
         <nav class="nav nav-pills nav-fill container bg-dark d-flex justify-content-center">
             <a class="nav-item nav-link text-light" href="<?php echo URL_BASE; ?>Admin/vagasAdmin">Vagas</a>
-            <a class="nav-item nav-link text-light" href="<?php echo URL_BASE; ?>Admin/solicitacoes">Matriculas aprovadas</a>
+            <a class="nav-item nav-link text-light" href="<?php echo URL_BASE; ?>Admin/aprovadas">Matriculas aprovadas</a>
             <a class="nav-item nav-link text-light" href="<?php echo URL_BASE; ?>Admin/solicitacoes">Solicitações</a>
         </nav>
 

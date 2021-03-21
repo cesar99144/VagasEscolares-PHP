@@ -119,4 +119,17 @@ class Educacional extends Controller{
 
 		endif;
 	}
+
+	public function acompanhar(){
+
+		if(isset($_POST['cpf']) && isset($_POST['buscar'])):
+
+		  	$matriculaDao = $this->model('MatriculaDao');
+		    $situacaoAluno = $matriculaDao->buscarSituacaoAluno($_POST['cpf']);
+		    echo $situacaoAluno[0]['nome'];
+			$this->view('home/acompanharMatricula', $dados = ['statusAluno' => $situacaoAluno]);
+
+		endif;
+	}
 }
+
