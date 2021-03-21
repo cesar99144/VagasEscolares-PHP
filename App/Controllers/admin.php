@@ -57,5 +57,19 @@ class Admin extends Controller{
     	$this->viewDash('admEscola/solicitacoes', $dados = ['solicitacoesVagas' => $solicitacoes]);
     }
 
+    public function aprovarVaga($id){
+
+    	$matriculas = $this->model('MatriculaDao');
+    	$Aprovarsolicitacoes = $matriculas->aprovarMatricula($id);
+    }
+
+    public function aprovadas(){
+
+    	$matriculas = $this->model('MatriculaDao');
+    	$solicitacoes = $matriculas->buscarSolicitacoesAprovadasPorEscola($_SESSION['idEscola']);
+
+    	$this->viewDash('admEscola/aprovados', $dados = ['solicitacoesVagas' => $solicitacoes]);
+    }
+
 
 }
