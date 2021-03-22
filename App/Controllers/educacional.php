@@ -126,7 +126,6 @@ class Educacional extends Controller{
 
 		  	$matriculaDao = $this->model('MatriculaDao');
 		    $situacaoAluno = $matriculaDao->buscarSituacaoAluno($_POST['cpf']);
-		    echo $situacaoAluno[0]['nome'];
 			$this->view('home/acompanharMatricula', $dados = ['statusAluno' => $situacaoAluno]);
 
 		endif;
