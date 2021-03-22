@@ -86,32 +86,44 @@
             </div>
         </section>
         <section id="contatos">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div id="Quadrocards">
+                <div class="card">
+                <div class="cardimg"></div>
+                    <div class="cardtexto">
+                        <span class="info"> Número </span>
+                        <h2> +55 81 XXXX-XXXX </h2>
+                        <p>Ligue Já</p>
+                    </div>
+                <div class="cardinfo"></div>
+
+                </div>
+                <!-- Card insta -->
+                <div class="card2">
+                    <div class="cardimg2"></div>
+                        <div class="cardtexto">
+                            <span class="info"> Nos sigam no </span>
+                            <h2> <a class="links" href="https://www.instagram.com/"> Instagram </a> </h2>
+                            <p>Siga nossa página</p>
+                        </div>
+                    <div class="cardinfo"></div>
+
+                </div>
+
+                <!-- Card twitter -->
+                <div class="card3">
+                    <div class="cardimg3"></div>
+                    <div class="cardtexto">
+                        <span class="info"> Também estamos no </span>
+                        <h2> <a class="links" href="https://twitter.com/login?lang=pt"> Twitter </a> </h2>
+                        <p> Também no twitter </p>
+                    </div>
+                    <div class="cardinfo">
+                        
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
         <footer id="rodape">

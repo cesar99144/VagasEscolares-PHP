@@ -313,6 +313,105 @@ p#conteudoDesc{
 /* cadastrar */
 
 
+/* Contatos */
+
+section#contatos{
+
+    height: 500px;
+    padding: 5rem;
+}
+
+div#Quadrocards{
+
+    display: flex;
+    margin-left: 110px;
+    
+}
+
+.card {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 20px;
+    grid-template-areas: "image" "text" "starts";
+
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px #2E8B57;
+    text-align: center;
+
+}
+
+
+.card2 {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 20px;
+    grid-template-areas: "image" "text" "starts";
+
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px #2E8B57;
+    text-align: center; }
+
+.card3 {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 20px;
+    grid-template-areas: "image" "text" "starts";
+
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px #2E8B57;
+    text-align: center; }
+
+
+.cardimg {
+    grid-area: image;
+    background: url(../imagens/foto.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+}
+
+.cardimg2 {
+    grid-area: image;
+    background: url(../imagens/foto2.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+}
+
+.cardimg3 {
+    grid-area: image;
+    background: url(../imagens/foto3.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+}
+
+.cardtexto { 
+    grid-area: text;
+    margin: 25px; }
+
+
+.cardinfo {
+    grid-area: stats;
+}
+
+.links{
+
+    text-decoration: none;
+}
+
 /* Modal */
 
 /* Modals */
@@ -389,6 +488,7 @@ button#fecharModal{
     width: 100px;
     
 }
+
 
 /* footer rodape */
 
