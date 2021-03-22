@@ -47,7 +47,7 @@
         </section>
 
         <section id="sobre">
-            <p>Plataforma com objetivo de facilitar acesso de alunos a procura de vagas disponíveis em instituições educaciomais específicas e condições específicas no conforto de suas casas, com site com alta facilidade de navegação e bem fácil achar a instituição de sua escolha e ver as vagas disponíveis.</p>
+            <p>Plataforma com objetivo de facilitar acesso de alunos a procura de vagas disponíveis em instituições educacionais específicas e condições específicas no conforto de suas casas, com site com alta facilidade de navegação e bem fácil achar a instituição de sua escolha e ver as vagas disponíveis.</p>
 
             <div class="parceiros">
                 <h1>Parceiros</h1> <br> <br>
