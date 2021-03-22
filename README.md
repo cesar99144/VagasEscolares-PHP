@@ -14,6 +14,7 @@
   <li>Ou utilizar o nosso próprio server php, o instalador está na pasta Assets/Instalador Server PHP (É necessário ter o php instalado para conseguir utilizar o server)</li>
   <li>Caso utilize algum outro servidor (xampp ou wamp por exemplo) será necessário criar um virtual host, devido as urls amigáveis requer o virtual host </li>
   <li>Para executar a aplicação basta apenas carregar a pasta raíz do projeto, onde se encontra o <strong>index.php</strong> dentro do server anexado</li>
+  <li>Ou apenas navegar no cmd até a index do projeto e rodar o comando php -S localhost:8080</li>
   <li>A aplicação tem que ser executada na porta 8080, mas caso queira utilizar outra porta é necessário modificar o <strong>URL_BASE do arquivo</strong> no endereço raíz <strong>index.php</strong> e colocar a porta que você deseja executar</li>
   <li>Este projeto foi desenvolvido na versão 7.4.8 do PHP</li>
 </ul> 
