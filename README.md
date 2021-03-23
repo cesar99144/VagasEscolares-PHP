@@ -1,7 +1,7 @@
 # VagasEscolares-PHP
 
 <blockquote>
- 	Projeto para escolas postarem vagas disponíveis e alunos poderem fazer uma matricula
+ 	Projeto para escolas postarem vagas disponíveis e alunos poderem fazer uma matrícula
 </blockquote><br>
 
 <p>Instalação</p>
