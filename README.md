@@ -11,7 +11,6 @@
   <li>Importar o arquivo sql "educacionalvagas.sql" que se encontra na pasta database para o seu mysql</li>
   <li>Ajustar os dados de conexão do arquivo <strong>Conexão.php</strong> que se encontra na pasta App/core, para os parâmetros do seu servidor</li>
   <li>Para mais praticidade na instalação e melhor utilização, indico utilizar o servidor embutido do php</li>
-  <li>Ou utilizar o nosso próprio server php, o instalador está na pasta Assets/Instalador Server PHP (É necessário ter o php instalado para conseguir utilizar o server)</li>
   <li>Caso utilize algum outro servidor (xampp ou wamp por exemplo) será necessário criar um virtual host, devido as urls amigáveis requer o virtual host </li>
   <li>Para executar a aplicação basta apenas carregar a pasta raíz do projeto, onde se encontra o <strong>index.php</strong> dentro do server anexado</li>
   <li>Ou apenas navegar no cmd até a index do projeto e rodar o comando php -S localhost:8080</li>
